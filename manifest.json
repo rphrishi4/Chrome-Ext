@@ -1,10 +1,15 @@
 {
-    "name": "Getting Started Example",
+    "manifest_version":2,
+    "name": "Filler",
     "version": "1.0",
-    "description": "Build an Extension!",
-	"background": {
-      "scripts": ["background.js"],
-      "persistent": false
+    "description": "Form Filler",
+    "icons":{
+      "128":"icon128.png",
+      "48":"icon48.png",
+      "16":"icon16.png"
     },
-    "manifest_version": 2
+    "browser_action":{
+      "default_icon":"icon16.png",
+      "default_popup":"popup.html"
+    }
   }

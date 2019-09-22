@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+    <head>
+<title>Getting Started Extension's Popup</title>
+<style>
+body {
+font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+font-size: 100%;
+}
+
+#status {
+/* avoid an excessively wide status text */
+white-space: pre;
+text-overflow: ellipsis;
+overflow: hidden;
+max-width: 400px;
+}
+</style>
+
+<!--
+- JavaScript and HTML must be in separate files: see our Content Security
+- Policy documentation[1] for details and explanation.
+-
+- [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>My Example</title>
+
+<!-- CSS -->
+<style>
+.myForm {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.8em;
+width: 20em;
+padding: 1em;
+border: 1px solid #ccc;
+}
+
+.myForm * {
+box-sizing: border-box;
+}
+
+.myForm fieldset {
+border: none;
+padding: 0;
+}
+
+.myForm legend,
+.myForm label {
+padding: 0;
+font-weight: bold;
+}
+
+.myForm label.choice {
+font-size: 0.9em;
+font-weight: normal;
+}
+
+.myForm input[type="text"],
+.myForm input[type="tel"],
+.myForm input[type="email"],
+.myForm input[type="datetime-local"],
+.myForm select,
+.myForm textarea {
+display: block;
+width: 100%;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.3em;
+}
+
+.myForm textarea {
+height: 100px;
+}
+
+.myForm button {
+padding: 1em;
+border-radius: 0.5em;
+background: #eee;
+border: none;
+font-weight: bold;
+margin-top: 1em;
+}
+
+.myForm button:hover {
+background: #ccc;
+cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+
+<form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+<p>
+<label>First Name
+<input type="text" name="first_name"  >
+</label> 
+</p>
+
+<p>
+    <label>Middle Name
+    <input type="text" name="Middle_name"  >
+    </label> 
+    </p>
+    
+<p>
+   <label>Last Name
+    <input type="text" name="last_name"  >
+    </label> 
+    </p>
+<p>
+   <label>Father's Name
+    <input type="text" name="father_name"  >
+    </label> 
+    </p>    
+<p>
+   <label>Mother's Name
+    <input type="text" name="mother_name"  >
+    </label> 
+    </p>    
+
+<p>
+    <label>Primary Phone 
+    <input type="tel" name="Primary_number">
+    </label>
+</p>
+
+<p>
+    <label>Secondary Phone 
+    <input type="tel" name="Secondary_number">
+    </label>
+    </p>
+
+    <p>
+        <label>Adhaar Number
+        <input type="tel" name="Adhaar_number">
+        </label>
+        </p>    
+
+        <p>
+            <label>PAN Card Number
+            <input type="tel" name="Pan_number">
+            </label>
+            </p>    
+   <p>
+        <label> Driving License Number
+        <input type="tel" name="Adhaar_number">
+        </label>
+        </p>    
+        
+
+                    
+
+<p>
+<label>Primary Email 
+<input type="email" name="primary_email_address">
+</label>
+</p>
+
+<p>
+    <label>Secondary Email 
+    <input type="email" name="Secondary_email_address">
+    </label>
+    </p>
+
+<p>
+<label>Gender
+<input type="text" name="Gender"   list="Gender">
+</label>
+
+<datalist id="Gender">
+<option value="Male">
+<option value="Female">
+<option value="Other">
+</datalist>
+</p>
+<p>
+    <label>primary address
+    <input type="text" name="primary_address"  >
+    </label> 
+    </p>
+    
+<p>
+   <label>Secondary address
+    <input type="text" name="Secondary_address"  >
+    </label> 
+    </p>
+
+    
+<p>
+    <label>School Name
+    <input type="text" name="School_name"  >
+    </label> 
+    </p>
+    
+<p>
+    <label>School Percentage
+    <input type="text" name="School_Percentage"  >
+    </label> 
+    </p>
+        
+    <p>
+        <label>College Name
+        <input type="text" name="College_name"  >
+        </label> 
+        </p>   
+
+    <p>
+        <label>College Percentage
+         <input type="text" name="College_Percentage"  >
+         </label> 
+         </p>
+
+<p>
+   <label>Higher Studies College Name
+    <input type="text" name="Higher_Studies_College_name"  >
+    </label> 
+    </p>    
+
+    <p>
+        <label>Higher Studies College Percentage
+         <input type="text" name="Higher_Studies_College_Percentage"  >
+         </label> 
+         </p>
+
+
+
+
+<p><button id=submit>Submit </button></p>
+
+</form>
+
+<script src="jquery.min.js"></script>
+</head>
+<body>
+<div id="result">Answer</div>
+<button id="computebutton">Display</button>
+<script type="text/javascript" src="helloworld.js"></script>
+</body>
+</html>
